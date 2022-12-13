@@ -9,18 +9,8 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>TestServlet</display-name>
-    <servlet-name>TestServlet</servlet-name>
-    <servlet-class>com.system.servlet.TestServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TestServlet</servlet-name>
-    <url-pattern>/TestServlet</url-pattern>
-  </servlet-mapping>
   
-<!--   CharSetFilter -->
+  <!--   CharSetFilter -->
   <filter>
     <display-name>CharSetFilter</display-name>
     <filter-name>CharSetFilter</filter-name>
@@ -33,5 +23,96 @@
   <filter-mapping>
     <filter-name>CharSetFilter</filter-name>
     <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>TestServlet</display-name>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.system.servlet.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.system.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>HomeServlet</display-name>
+    <servlet-name>HomeServlet</servlet-name>
+    <servlet-class>com.system.servlet.HomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HomeServlet</servlet-name>
+    <url-pattern>/HomeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>StudentServlet</display-name>
+    <servlet-name>StudentServlet</servlet-name>
+    <servlet-class>com.system.servlet.StudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentServlet</servlet-name>
+    <url-pattern>/StudentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>DormitoryServlet</display-name>
+    <servlet-name>DormitoryServlet</servlet-name>
+    <servlet-class>com.system.servlet.DormitoryServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DormitoryServlet</servlet-name>
+    <url-pattern>/DormitoryServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>BillServlet</display-name>
+    <servlet-name>BillServlet</servlet-name>
+    <servlet-class>com.system.servlet.BillServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BillServlet</servlet-name>
+    <url-pattern>/BillServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>RepairServlet</display-name>
+    <servlet-name>RepairServlet</servlet-name>
+    <servlet-class>com.system.servlet.RepairServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RepairServlet</servlet-name>
+    <url-pattern>/RepairServlet</url-pattern>
+  </servlet-mapping>
+  
+<!-- filters -->
+  
+  <filter>
+    <display-name>LoginFilter</display-name>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>com.system.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/pages/*</url-pattern>
   </filter-mapping>
 </web-app>

@@ -1,6 +1,7 @@
 package com.system.servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -24,4 +25,19 @@ public class TestServlet extends BaseServlet {
     	request.setAttribute("list", list);
     	request.getRequestDispatcher("/pages/test.jsp").forward(request, response);
     }
+    
+	 public void sum(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+	    	
+	    	String parameter = request.getParameter("num");
+	    	int num = Integer.parseInt(parameter);
+	    	int result=0;
+	    	for(int i = 1; i <= num ; i+=2) {
+	    		result+=i;
+	    	}
+	    	request.setAttribute("result", result);
+	    	request.getRequestDispatcher("/pages/result.jsp").forward(request, response);
+//	    	PrintWriter writer = response.getWriter();
+//	    	Integer num1 = new Integer(result);
+//	    	writer.write(num1.toString());
+	   }
 }

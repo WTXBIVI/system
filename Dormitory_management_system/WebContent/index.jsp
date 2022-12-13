@@ -7,6 +7,29 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:forward page="TestServlet?method=getAll"></jsp:forward>
+	<jsp:forward page="LoginServlet?method=toLogin"></jsp:forward>
+<!-- 	<form id="sumForm" action="TestServlet"> -->
+<!-- 		<input type="hidden" name = "method" value = "sum"/> -->
+<!-- 		输入一个数:<input name="num" type="text" /><br> -->
+<!-- 		<input type="button" onclick="sum()" value="提交" /> -->
+<!-- 	</form> -->
+	
+<%-- 	<script type="text/javascript" src="${pageContext.request.contextPath}/static/script/jquery-1.7.2.js"></script> --%>
+<!-- 	<script type="text/javascript"> -->
+<!--   		function sum(){   -->
+<!--   // 			alert($);   -->
+<!--   			var num = $("#sumForm input[name=num]").val();   -->
+<!--   			$.ajax({   -->
+<!--   				type:"GET",  -->
+<!--   				url:"TestServlet",   -->
+<!--  				data:"method=sum&num="+num,   -->
+<!--   				success: function(result){   -->
+<!--  					alert("result"+result);   -->
+<!--   				}   -->
+				
+<!--   			});   -->
+<!--    		}   -->
+	</script>
 </body>
+	
 </html>
